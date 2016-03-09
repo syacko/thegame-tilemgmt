@@ -1,6 +1,3 @@
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
-_default:
-  pattern: /
-  defaults: { _controller: AppBundle:Default:index }
