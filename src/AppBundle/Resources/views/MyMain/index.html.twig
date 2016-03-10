@@ -4,4 +4,9 @@
 
 {% block body %}
 <h1>Welcome to the MyMain:index page</h1>
+
+    {% if user.active %}
+        <p>Hello, {{ user.name }}.</p>
+    {% endif %}
+
 {% endblock %}

@@ -12,7 +12,8 @@ class MyMainController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('AppBundle:MyMain:index.html.twig');
+        $user = array('name' => 'Scott', 'active' => true);
+        return $this->render('AppBundle:MyMain:index.html.twig', array('user' => $user));
     }
 
 }
