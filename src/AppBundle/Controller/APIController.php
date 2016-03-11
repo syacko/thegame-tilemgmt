@@ -18,13 +18,11 @@ class APIController extends Controller
     }
 
     /**
-     * @Route("/buildable")
+     * @Route("/isbuildable")
      */
-    public function buildableAction()
+    public function isbuildableAction()
     {
-        return $this->render('AppBundle:API:buildable.html.twig', array(
-            // ...
-        ));
+        return new JsonResponse(array('name' => 'Yacko'));
     }
 
 
